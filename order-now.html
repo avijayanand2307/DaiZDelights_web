@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - DaiZ Delights</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <img src="images/DaiZDelights.png" alt="DaiZ Delights" class="logo-image"> DaiZ Delights
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="order-now.html" class="active">Order Now</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+    <section class="hero" style="padding: 50px 2rem; min-height: 300px;">
+        <div class="hero-content">
+            <h1>Place Your Order</h1>
+            <p style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.95);">Fresh, handcrafted brownies & blondies delivered to your door</p>
+        </div>
+    </section>
+    <div class="container">
+        <section class="section">
+            <div class="order-wrapper">
+                <div class="order-form-container">
+                    <form id="orderForm">
+                        <!-- Delivery Information -->
+                        <fieldset class="form-section">
+                            <legend><i class="fas fa-map-marker-alt"></i> Delivery Information</legend>
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" placeholder="john@example.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" placeholder="+91 (555) 123-4567" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address *</label>
+                                <input type="text" id="address" placeholder="123 Main Street" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City *</label>
+                                    <input type="text" id="city" placeholder="New York" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State/Province *</label>
+                                    <input type="text" id="state" placeholder="NY" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="postal">Postal Code *</label>
+                                    <input type="text" id="postal" placeholder="10001" required>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <!-- Product Selection -->
+                        <fieldset class="form-section">
+                            <legend><i class="fas fa-cupcake"></i> Select Products</legend>
+                            <div class="checkbox-group">
+                                <h3 style="color: var(--primary-color); font-size: 1.1rem; margin: 1.5rem 0 1rem 0;">Brownies</h3>
+                                <label class="product-checkbox">
+                                    <input type="checkbox" name="product" value="Fudgy Brownie - ₹4.99">
+                                    <span>Fudgy Brownie - ₹4.99</span>
+                                </label>
+                                <label class="product-checkbox">
+                                    <input type="checkbox" name="product" value="Chocolate Chip Brownie - ₹4.49">
+                                    <span>Chocolate Chip Brownie - ₹4.49</span>
+                                </label>
+                                <label class="product-checkbox">
+                                    <input type="checkbox" name="product" value="Espresso Brownie - ₹5.99">
+                                    <span>Espresso Brownie - ₹5.99</span>
+                                </label>
+                                <label class="product-checkbox">
+                                    <input type="checkbox" name="product" value="Mint Brownie - ₹5.49">
+                                    <span>Mint Brownie - ₹5.49</span>
+                                </label>
+                                <label class="product-checkbox">
+                                    <input type="checkbox" name="product" value="Triple Chocolate Brownie - ₹7.99">
+                                    <span>Triple Chocolate Brownie - ₹7.99</span>
+                                </label>
+                            </div>
+                            <div class="checkbox-group">
+                                <h3 style="color: var(--primary-color); font-size: 1.1rem; margin: 1.5rem 0 1rem 0;">Blondies</h3>
+                                <label class="product-checkbox">
+                                    <input type="checkbox" name="product" value="Walnut Blondie - ₹5.49">
+                                    <span>Walnut Blondie - ₹5.49</span>
+                                </label>
+                                <label class="product-checkbox">
+                                    <input type="checkbox" name="product" value="Caramel Blondie - ₹5.99">
+                                    <span>Caramel Blondie - ₹5.99</span>
+                                </label>
+                                <label class="product-checkbox">
+                                    <input type="checkbox" name="product" value="Macadamia Blondie - ₹6.49">
+                                    <span>Macadamia Blondie - ₹6.49</span>
+                                </label>
+                                <label class="product-checkbox">
+                                    <input type="checkbox" name="product" value="Classic Vanilla Blondie - ₹4.99">
+                                    <span>Classic Vanilla Blondie - ₹4.99</span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <!-- Delivery Options -->
+                        <fieldset class="form-section">
+                            <legend><i class="fas fa-truck"></i> Delivery Options</legend>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="delivery" value="same-day" checked>
+                                    <span>Same-Day Delivery - ₹5.99</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="delivery" value="next-day">
+                                    <span>Next-Day Delivery - ₹3.99</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="delivery" value="standard">
+                                    <span>Standard Shipping - FREE for >₹50</span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <!-- Special Requests -->
+                        <fieldset class="form-section">
+                            <legend><i class="fas fa-comment"></i> Special Requests (Optional)</legend>
+                            <div class="form-group">
+                                <label for="specialRequests">Any special instructions or dietary requirements?</label>
+                                <textarea id="specialRequests" placeholder="E.g., Extra chocolate chips, no nuts, gift message..."></textarea>
+                            </div>
+                        </fieldset>
+                        <!-- Promo Code -->
+                        <div class="promo-section">
+                            <label class="promo-label"><i class="fas fa-tag"></i> Promo Code (Optional)</label>
+                            <div class="promo-input-group">
+                                <input type="text" id="promoCode" placeholder="Enter promo code">
+                                <button type="button" class="btn btn-primary apply-promo-btn" onclick="applyPromo()">Apply</button>
+                            </div>
+                            <p class="promo-hint">Try: <strong>DAIZ15</strong> for 15% off, <strong>DAIZ20</strong> for 20% off</p>
+                        </div>
+                        <!-- Payment Methods -->
+                        <div class="payment-methods">
+                            <div class="payment-title"><i class="fas fa-lock"></i> Secure Payment Methods</div>
+                            <div class="payment-icons">
+                                <i class="fab fa-cc-paypal" title="PayPal"></i>
+                                <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                                <i class="fab fa-cc-amex" title="American Express"></i>
+                                <i class="fab fa-google" title="Google Pay"></i>
+                            </div>
+                        </div>
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+                            <i class="fas fa-credit-card"></i> Proceed to Payment
+                        </button>
+                    </form>
+                </div>
+                <!-- Order Summary Sidebar -->
+                <div class="order-summary">
+                    <div class="summary-header"><i class="fas fa-receipt"></i> Order Summary</div>
+                    <div id="summaryItems" class="summary-items">
+                        <p style="color: #999; text-align: center; padding: 1rem;">Select products to see summary</p>
+                    </div>
+                    <div class="summary-section">
+                        <span class="summary-label">Subtotal:</span>
+                        <span class="summary-value" id="subtotal">₹0.00</span>
+                    </div>
+                    <div class="summary-section">
+                        <span class="summary-label">Delivery:</span>
+                        <span class="summary-value" id="deliveryCost">₹5.99</span>
+                    </div>
+                    <div class="summary-section" style="display: none;">
+                        <span class="summary-label">Discount:</span>
+                        <span class="summary-value summary-discount" id="discount">-₹0.00</span>
+                    </div>
+                    <div class="summary-total">
+                        <span class="summary-total-label">Total:</span>
+                        <span class="summary-total-amount" id="total">₹5.99</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Trust Badges -->
+            <div class="trust-section" style="margin-top: 3rem;">
+                <div class="trust-grid">
+                    <div class="trust-badge">
+                        <div class="trust-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="trust-title">Secure Payment</div>
+                        <div class="trust-text">SSL encrypted & secure transactions</div>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="trust-icon"><i class="fas fa-undo"></i></div>
+                        <div class="trust-title">Money-Back Guarantee</div>
+                        <div class="trust-text">30-day satisfaction guarantee</div>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="trust-icon"><i class="fas fa-headset"></i></div>
+                        <div class="trust-title">24/7 Support</div>
+                        <div class="trust-text">Dedicated customer support team</div>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="trust-icon"><i class="fas fa-star"></i></div>
+                        <div class="trust-title">Quality Guaranteed</div>
+                        <div class="trust-text">Premium ingredients & fresh baking</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links"><a href="index.html">Home</a><a href="products.html">Products</a><a href="order-now.html">Order</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+            <div class="footer-social"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+            <p class="footer-text">&copy; <span id="year"></span> DaiZ Delights. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

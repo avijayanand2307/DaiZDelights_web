@@ -1,0 +1,185 @@
+﻿DAIZ DELIGHTS - WEBSITE STRUCTURE & NAVIGATION MAP
+====================================================
+
+🏠 HOME (index.html)
+├── Navigation Menu
+│   ├── Home (Active)
+│   ├── Products → products.html
+│   ├── Order Now → order-now.html
+│   ├── About → about.html
+│   └── Contact → contact.html
+├── Hero Section
+│   ├── Icon: Birthday Cake
+│   ├── Headline: Welcome to DaiZ Delights
+│   ├── Subheading: Handcrafted Brownies & Blondies...
+│   └── CTA Button: Order Now → order-now.html
+├── Featured Products (3 items)
+│   ├── Fudgy Brownie - ₹4.99
+│   ├── Classic Vanilla Blondie - ₹4.99
+│   └── Salted Caramel Blondie - ₹5.99
+├── Why Choose DaiZ? (4 Features)
+│   ├── Premium Quality
+│   ├── Handcrafted with Love
+│   ├── Fast Delivery
+│   └── Customer Satisfaction
+├── Call to Action Section
+│   └── Use code DAIZ15 for 15% off
+└── Footer (All Pages)
+    ├── Links: Home, Products, Order, About, Contact
+    ├── Social: Facebook, Instagram, Twitter
+    └── Copyright
+
+📦 PRODUCTS (products.html)
+├── Page Header: Our Products
+├── Product Grid (9 items - 3 columns responsive)
+│   Brownies:
+│   ├── Fudgy Brownie - ₹4.99
+│   ├── Chocolate Chip Brownie - ₹4.49
+│   ├── Espresso Brownie - ₹5.99
+│   ├── Mint Brownie - ₹5.49
+│   └── Triple Chocolate Brownie - ₹7.99
+│   Blondies:
+│   ├── Walnut Blondie - ₹5.49
+│   ├── Caramel Blondie - ₹5.99
+│   ├── Macadamia Blondie - ₹6.49
+│   └── Classic Vanilla Blondie - ₹4.99
+├── Each Product Card
+│   ├── Image Placeholder
+│   ├── Product Name
+│   ├── Description
+│   ├── Price
+│   └── Add to Cart Button
+└── Order Now CTA
+
+🛒 ORDER NOW (order-now.html) ⭐ PRIMARY PAGE
+├── Page Header: Place Your Order
+├── Main Content Area (Two Columns)
+│   
+│   LEFT COLUMN - Order Form:
+│   ├── [1] Delivery Information
+│   │   ├── Full Name (required)
+│   │   ├── Email (required)
+│   │   ├── Phone (required)
+│   │   ├── Address (required)
+│   │   ├── City (required)
+│   │   ├── State (required)
+│   │   └── Postal Code (required)
+│   │
+│   ├── [2] Product Selection
+│   │   ├── Brownies Section (5 checkboxes)
+│   │   │   ├── ☐ Fudgy Brownie - ₹4.99
+│   │   │   ├── ☐ Chocolate Chip Brownie - ₹4.49
+│   │   │   ├── ☐ Espresso Brownie - ₹5.99
+│   │   │   ├── ☐ Mint Brownie - ₹5.49
+│   │   │   └── ☐ Triple Chocolate Brownie - ₹7.99
+│   │   └── Blondies Section (4 checkboxes)
+│   │       ├── ☐ Walnut Blondie - ₹5.49
+│   │       ├── ☐ Caramel Blondie - ₹5.99
+│   │       ├── ☐ Macadamia Blondie - ₹6.49
+│   │       └── ☐ Classic Vanilla Blondie - ₹4.99
+│   │
+│   ├── [3] Delivery Options
+│   │   ├── ◉ Same-Day Delivery - ₹5.99 (default)
+│   │   ├── ○ Next-Day Delivery - ₹3.99
+│   │   └── ○ Standard Shipping - FREE (>₹50)
+│   │
+│   ├── [4] Special Requests (Optional)
+│   │   └── Textarea for instructions
+│   │
+│   ├── [5] Promo Code (Optional)
+│   │   ├── Input field
+│   │   ├── Apply button
+│   │   └── Hint: DAIZ15 (15% off), DAIZ20 (20% off)
+│   │
+│   ├── [6] Payment Methods
+│   │   ├── 💳 PayPal
+│   │   ├── 💳 Mastercard
+│   │   ├── 💳 American Express
+│   │   └── 💳 Google Pay
+│   │
+│   └── [7] Submit Button
+│       └── "Proceed to Payment"
+│
+│   RIGHT COLUMN - Order Summary (Sticky):
+│   ├── Order Summary Header
+│   ├── Selected Products List
+│   │   └── (Updates in real-time)
+│   ├── Subtotal: ₹X.XX
+│   ├── Delivery: ₹X.XX (or FREE)
+│   ├── Discount: -₹X.XX (only if promo applied)
+│   └── TOTAL: ₹X.XX (in large, bold text)
+│
+├── Trust Badges Section (4 columns)
+│   ├── 🔒 Secure Payment
+│   ├── ↩️ Money-Back Guarantee
+│   ├── 📞 24/7 Support
+│   └── ⭐ Quality Guaranteed
+│
+└── Submit Form → Saves to localStorage
+
+ℹ️ ABOUT (about.html)
+├── Page Header: About DaiZ Delights
+├── Our Story Section
+│   └── 2 paragraphs about history & passion
+├── Why Choose Us? (6 Feature Cards)
+│   ├── 🏆 Premium Quality Ingredients
+│   ├── ❤️ Handcrafted with Love
+│   ├── 🍃 Fresh to Order
+│   ├── 🚚 Fast Delivery
+│   ├── 😊 Customer First
+│   └── ⭐ Award-Winning Recipes
+├── Our Commitment Section
+│   └── 5 Bullet Points with checkmarks
+└── CTA: Order Your Favorites Today
+
+📞 CONTACT (contact.html)
+├── Page Header: Contact Us
+├── Contact Information Cards (3 columns)
+│   ├── 📍 Visit Us
+│   │   └── Address with icon
+│   ├── 📞 Call Us
+│   │   └── Phone numbers
+│   └── ✉️ Email Us
+│       └── Email addresses
+├── Contact Form Section
+│   ├── Your Name (required)
+│   ├── Email Address (required)
+│   ├── Message (required)
+│   └── Send Message button
+├── Business Hours Section
+│   ├── Mon-Fri: 9:00 AM - 6:00 PM EST
+│   ├── Sat: 10:00 AM - 4:00 PM EST
+│   └── Sun: Closed (Orders accepted online)
+└── Orders processing note
+
+════════════════════════════════════════════════════════════════
+
+KEY INTERACTIVE ELEMENTS:
+
+✅ Mobile Hamburger Menu (activates on <768px)
+✅ Real-Time Order Summary (updates instantly)
+✅ Form Validation (prevents incomplete submissions)
+✅ Promo Code Application (DAIZ15, DAIZ20)
+✅ Toast Notifications (success/error messages)
+✅ localStorage Persistence (data saved)
+✅ Sticky Navigation (visible on scroll)
+✅ Smooth Scrolling (animated transitions)
+✅ Active Link Highlighting (shows current page)
+✅ Responsive Grid Layout (adapts to screen size)
+
+════════════════════════════════════════════════════════════════
+
+DATA FLOW:
+
+1. User visits index.html (Home)
+2. User navigates to products.html
+3. User clicks Order Now → order-now.html
+4. User fills delivery information
+5. User selects products (checkboxes)
+6. Order Summary updates in real-time
+7. User optionally applies promo code
+8. User submits form
+9. Data saved to browser localStorage
+10. Confirmation notification shown
+
+════════════════════════════════════════════════════════════════

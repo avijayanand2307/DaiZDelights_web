@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - DaiZ Delights</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <img src="images/DaiZDelights.png" alt="DaiZ Delights" class="logo-image"> DaiZ Delights
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="order-now.html">Order Now</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+    <section class="hero" style="padding: 50px 2rem; min-height: 300px;">
+        <div class="hero-content">
+            <h1>Our Products</h1>
+            <p style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.95);">Explore our complete collection</p>
+        </div>
+    </section>
+    <div class="container">
+        <section class="section">
+            <div class="section-title"><h2>All Products</h2></div>
+            <div class="products-grid">
+                <div class="product-card"><div class="product-image"><img src="images/FudgyBrownie.jpeg" alt="Fudgy Brownie"></div><div class="product-info"><div class="product-name">Fudgy Brownie</div><p class="product-description">Rich, decadent chocolate with a fudgy center.</p><div class="product-footer"><span class="product-price">₹49</span><button class="btn btn-small btn-primary" onclick="addToCart('Fudgy Brownie', 49)"><i class="fas fa-cart-plus"></i> Add</button></div></div></div>
+                <div class="product-card"><div class="product-image"><img src="images/ClassicVanillaBlondie.jpeg" alt=""></div><div class="product-info"><div class="product-name">Classic Vanilla Blondie</div><p class="product-description">Buttery vanilla base with chocolate chips.</p><div class="product-footer"><span class="product-price">₹49</span><button class="btn btn-small btn-primary" onclick="addToCart('Classic Vanilla Blondie', 49)"><i class="fas fa-cart-plus"></i> Add</button></div></div></div>
+                <div class="product-card"><div class="product-image"><img src="images/ClassicVanillaBlondie.jpeg" alt="Walnut Brownie"></div><div class="product-info"><div class="product-name">Walnut Brownie</div><p class="product-description">Chocolate brownies with walnut pieces.</p><div class="product-footer"><span class="product-price">₹59</span><button class="btn btn-small btn-primary" onclick="addToCart('Walnut Brownie', 59)"><i class="fas fa-cart-plus"></i> Add</button></div></div></div>
+                <div class="product-card"><div class="product-image"><img src="images/ClassicVanillaBlondie.jpeg" alt="Salted Caramel Blondie"></div><div class="product-info"><div class="product-name">Salted Caramel Blondie</div><p class="product-description">Sweet caramel with sea salt.</p><div class="product-footer"><span class="product-price">₹5.99</span><button class="btn btn-small btn-primary" onclick="addToCart('Salted Caramel Blondie', 5.99)"><i class="fas fa-cart-plus"></i> Add</button></div></div></div>
+                <div class="product-card"><div class="product-image"><img src="images/DoubleChocolateBrownie.jpeg" alt="Double Chocolate Brownie"></div><div class="product-info"><div class="product-name">Double Chocolate Brownie</div><p class="product-description">Intense dark chocolate with chunks.</p><div class="product-footer"><span class="product-price">₹949</span><button class="btn btn-small btn-primary" onclick="addToCart('Double Chocolate Brownie', 949)"><i class="fas fa-cart-plus"></i> Add</button></div></div></div>
+                <div class="product-card"><div class="product-image"><img src="images/FudgyBrownie.jpeg" alt="Espresso Brownie"></div><div class="product-info"><div class="product-name">Espresso Brownie</div><p class="product-description">Chocolate with real espresso.</p><div class="product-footer"><span class="product-price">₹5.99</span><button class="btn btn-small btn-primary" onclick="addToCart('Espresso Brownie', 99)"><i class="fas fa-cart-plus"></i> Add</button></div></div></div>
+                <div class="product-card"><div class="product-image"><img src="images/FudgyBrownie.jpeg" alt="Macadamia Blondie"></div><div class="product-info"><div class="product-name">Macadamia Blondie</div><p class="product-description">Blondie with luxurious macadamia nuts.</p><div class="product-footer"><span class="product-price">₹6.49</span><button class="btn btn-small btn-primary" onclick="addToCart('Macadamia Blondie', 69)"><i class="fas fa-cart-plus"></i> Add</button></div></div></div>
+                <div class="product-card"><div class="product-image"><img src="images/FudgyBrownie.jpeg" alt="Mint Chocolate Brownie"></div><div class="product-info"><div class="product-name">Mint Chocolate Brownie</div><p class="product-description">Chocolate with fresh mint flavor.</p><div class="product-footer"><span class="product-price">₹5.49</span><button class="btn btn-small btn-primary" onclick="addToCart('Mint Chocolate Brownie', 59)"><i class="fas fa-cart-plus"></i> Add</button></div></div></div>
+                <div class="product-card"><div class="product-image"><img src="images/ChocoVanillaBB.jpeg" alt="Choco Vanilla Brownie Blondie"></div><div class="product-info"><div class="product-name">Choco Vanilla Brownie Blondie</div><p class="product-description">Blondie with luxurious macadamia nuts.</p><div class="product-footer"><span class="product-price">₹1499</span><button class="btn btn-small btn-primary" onclick="addToCart('Choco Vanilla Brownie Blondie', 1499)"><i class="fas fa-cart-plus"></i> Add</button></div></div></div>
+                <div class="product-card"><div class="product-image"><img src="images/ChocoPops.jpeg" alt="Choco Pops"></div><div class="product-info"><div class="product-name">Choco Chip Cookies</div><p class="product-description">Chocolate with fresh vanilla flavor.</p><div class="product-footer"><span class="product-price">₹59</span><button class="btn btn-small btn-primary" onclick="addToCart('Choco Pops', 59)"><i class="fas fa-cart-plus"></i> Add</button></div></div></div>
+                <div class="product-card"><div class="product-image"><img src="images/ChocoChipCookies.jpeg" alt="Choco Chip Cookies"></div><div class="product-info"><div class="product-name">Choco Pops</div><p class="product-description">Chocolate with fresh flavor.</p><div class="product-footer"><span class="product-price">₹59</span><button class="btn btn-small btn-primary" onclick="addToCart('Choco Chip Cookies', 59)"><i class="fas fa-cart-plus"></i> Add</button></div></div></div>
+                <div class="product-card"><div class="product-image"><img src="images/ClassicVanillaBlondie.jpeg" alt="Caramel Blondie"></div><div class="product-info"><div class="product-name">Caramel Blondie</div><p class="product-description">Golden buttery with caramel sauce.</p><div class="product-footer"><span class="product-price">₹59</span><button class="btn btn-small btn-primary" onclick="addToCart('Caramel Blondie', 59)"><i class="fas fa-cart-plus"></i> Add</button></div></div></div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;"><a href="order-now.html" class="btn btn-primary">Order Now</a></div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links"><a href="index.html">Home</a><a href="products.html">Products</a><a href="order-now.html">Order</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+            <div class="footer-social"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+            <p class="footer-text">&copy; <span id="year"></span> DaiZ Delights. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
